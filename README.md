@@ -13,6 +13,11 @@ Shoparl is an online store offering a curated selection of high-quality, afforda
 - **Contact Us**: Details for reaching out to the store.
 - **Specials**: Displays current promotions and deals.
 
+## Live Website
+
+You can view the live version of the website here:  
+[Shoparl Website](https://arnolddecoder.github.io/My-Shoparl-website/)
+
 
 ## Folder Structure
 shoparl/

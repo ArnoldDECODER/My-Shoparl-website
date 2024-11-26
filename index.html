@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoparl</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <p class="logo">Shoparl</p>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="specials.html">Specials</a></li>
+                    <li><a href="contact-us-form.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hold">
+            <nav id="hamburger-nav">
+                <p class="logo">Shoparl</p>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>                                                                                                                                       
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="shop.html" onclick="toggleMenu()">Shop</a></li>
+                        <li><a href="specials.html" onclick="toggleMenu()">Specials</a></li>
+                        <li><a href="contact-us-form.html" onclick="toggleMenu()">Contact Us</a></li>
+                    </div>
+                </div>
+                </nav>
+        </div>
+    </header>
+    <section class="homepage-content"><br>
+          <h1 class="introduction">Welcome To <strong class="description">Shoparl</strong></h1>
+        <p class="product-description">Shoparl offers a curated shopping experience with a focus on <strong class="description">high-quality</strong>, <strong class="description">affordable fashion</strong>, accessories, and lifestyle products. Highlighting exclusive deals, trendy collections, and seamless online shopping, Shoparl caters to style-conscious customers looking for convenience and value.</p>
+        <img src="images/blackfridaypicture2.jpg" alt="black friday picture" class="black-friday-picture">         
+        <div class="black-friday-bar">
+    
+            Black Friday Specials! <a href="specials.html">Check out our great deals</a>
+          </div>
+        <p class="product-description">Here you'll find unique and high-quality stationery goods that are designed by Artist & Creator, AmandaRachLee. If you want to add a daily dose of <strong>creativity</strong>, <strong>mindfulness</strong>, and <strong>productivity</strong> to your life, you've come to the right place!</p>
+
+        <div class="product-grid">
+            <div class="product-card">
+              <img src="images/DenimBag1.webp" alt="Product 1">
+              <h3>Denim Bag</h3>
+              <p>$20.00</p>
+              <button onclick="window.location.href='shop.html'">Buy Now</button>
+            </div>
+            <div class="product-card">
+              <img src="images/2025DoodlePlanner-3.webp" alt="Product 2">
+              <h3>2025 Doodle Planner</h3>
+              <p>$25.00</p>
+              <button onclick="window.location.href='shop.html'">Buy Now</button>
+            </div>
+            <div class="product-card">
+              <img src="images/Stickers-1_b260eb75-2111-4ad0-9539-6533381f35fc.webp" alt="Product 3">
+              <h3>Stickers</h3>
+              <p>$30.00</p>
+              <button onclick="window.location.href='shop.html'">Buy Now</button>
+            </div>
+          </div>
+                              </section>
+    
+        </article>
+    
+    </section>
+        
+    <section id="contact_us" class="socials">
+        <h2 id="Contact">Contact Us</h2>
+        <div class="socials" id="contact_us">
+            <a href="https://www.instagram.com/shoparl.co/" target= "_blank" rel="noopener noreferrer"><i class='bx bxl-instagram' ></i></a> 
+            <a href="https://www.youtube.com/amandarachlee" target= "_blank" rel="noopener noreferrer"><i class='bx bxl-youtube'  ></i></a>
+            <a href="https://x.com/shop_ARL" target= "_blank" rel="noopener noreferrer"><i class='bx bxl-twitter' ></i></a>
+        </div>
+</section>
+    <footer>
+        <p>&copy; 2024 Shoparl. All rights reserved.</p>
+    </footer>
+
+    <script src="./func.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure responsiveness on different devices -->
+    <title>Black Friday Deals | ShopArl</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="index.css"> <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="specials.css"> <!-- Link to the specials page stylesheet -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Link to Boxicons for icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Link to Google Material Icons -->
+</head>
+<body>
+  <!-- The following part is for the navbar, the code is the same on all pages -->
+  <header>
+        <nav id="desktop-nav">
+            <p class="logo">Shoparl</p> <!-- Logo text -->
+            <div>
+                <ul class="nav-links"> <!-- Navigation links for desktop -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="specials.html">Specials</a></li>
+                    <li><a href="contact-us-form.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+  <!-- The following part is for the hamburger menu, it appears when the screen is small -->
+  <div class="hold">
+            <nav id="hamburger-nav">
+                <p class="logo">Shoparl</p> <!-- Logo for the mobile navigation -->
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()"> <!-- Hamburger icon to toggle the menu -->
+                        <span></span>                                                                                                                                       
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- Links for the hamburger menu -->
+                    <div class="menu-links">
+                        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="shop.html" onclick="toggleMenu()">Shop</a></li>
+                        <li><a href="specials.html" onclick="toggleMenu()">Special</a></li>
+                        <li><a href="contact-us-form.html" onclick="toggleMenu()">Contact Us</a></li>
+                    </div>
+                </div>
+                </nav>
+        </div>
+    </header>
+    <!-- The navbar ends here -->
+
+<!-- The content of the page starts here -->
+  <div class="specialsheader">
+    <div class="black-friday">
+      Black Friday Specials! Check out our great deals <!-- Black Friday special text -->
+    </div>
+    <h2>Unmissable Deals for a Limited Time Only!</h2> <!-- Heading for the deals -->
+    <p id="countdownTimer" class="description">Sale ends in: </p> <!-- Countdown timer text -->
+  </div>
+
+  <!-- The code below is for products -->
+  <section class="deals">
+    <div class="deal-item">
+      <img src="images/Stickers-1_b260eb75-2111-4ad0-9539-6533381f35fc.webp" alt="Product 1"> <!-- Product 1 image -->
+      <h3>50% Off Trendy Stickers</h3> <!-- Product 1 title -->
+      <p>Now: $14.99</p> <!-- Product 1 price -->
+      <a href="#" class="btn">Shop Now</a> <!-- Button to shop the product -->
+    </div>
+    <div class="deal-item">
+      <img src="images/pencile case.webp" alt="Product 2"> <!-- Product 2 image -->
+      <h3>Buy 2 Get 1 Free</h3> <!-- Product 2 title -->
+      <p>Pencil Case</p> <!-- Product 2 description -->
+      <a href="#" class="btn">Shop Now</a> <!-- Button to shop the product -->
+    </div>
+    <div class="deal-item">
+      <img src="images/DenimTote2.webp" alt="Product 1"> <!-- Product 3 image -->
+      <h3>50% Off Denim Tote Bag</h3> <!-- Product 3 title -->
+      <p>Now: $14.99</p> <!-- Product 3 price -->
+      <a href="#" class="btn">Shop Now</a> <!-- Button to shop the product -->
+    </div>
+    <div class="deal-item">
+      <img src="images/Denim_Undated.webp" alt="Product 2"> <!-- Product 4 image -->
+      <h3>Buy 2 Get 1 Free</h3> <!-- Product 4 title -->
+      <p>Denim Doodle Planner</p> <!-- Product 4 description -->
+      <a href="#" class="btn">Shop Now</a> <!-- Button to shop the product -->
+    </div>
+    <div class="deal-item">
+      <img src="images/Tan_Dotted_Notebook_copy.webp" alt="Product 1"> <!-- Product 5 image -->
+      <h3>50% Off Trendy Dotted Notebook</h3> <!-- Product 5 title -->
+      <p>Now: $14.99</p> <!-- Product 5 price -->
+      <a href="#" class="btn">Shop Now</a> <!-- Button to shop the product -->
+    </div>
+    <div class="deal-item">
+      <img src="images/SwirlWashiTape-9.webp" alt="Product 2"> <!-- Product 6 image -->
+      <h3>Buy 2 Get 1 Free</h3> <!-- Product 6 title -->
+      <p>Swirl Washi Tape</p> <!-- Product 6 description -->
+      <a href="#" class="btn">Shop Now</a> <!-- Button to shop the product -->
+    </div>
+    <div class="deal-item">
+      <img src="images/SwirlWashiTape-13.webp" alt="Product 3"> <!-- Product 7 image -->
+      <h3>50% Off</h3> <!-- Product 7 title -->
+      <p>Now: $14.99</p> <!-- Product 7 price -->
+      <a href="#" class="btn">Shop Now</a> <!-- Button to shop the product -->
+    </div>
+    <div class="deal-item">
+      <img src="images/SwirlWashiTape-11.webp" alt="Product 4"> <!-- Product 8 image -->
+      <h3>Buy 2 Get 1 Free</h3> <!-- Product 8 title -->
+      <p>Swirl Washi Tape</p> <!-- Product 8 description -->
+      <a href="#" class="btn">Shop Now</a> <!-- Button to shop the product -->
+    </div>
+  </section>
+  <!-- The code below is for the bottom part of the page, it is the same on all the pages -->
+
+  <section id="contact_us" class="socials">
+    <h2 id="Contact">Contact Us</h2> <!-- Contact Us heading -->
+    <div class="socials" id="contact_us"> <!-- Social media links section -->
+        <a href="https://www.instagram.com/shoparl.co/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram'></i></a> <!-- Instagram link -->
+        <a href="https://www.youtube.com/amandarachlee" target="_blank" rel="noopener noreferrer"><i class='bx bxl-youtube'></i></a> <!-- YouTube link -->
+        <a href="https://x.com/shop_ARL" target="_blank" rel="noopener noreferrer"><i class='bx bxl-twitter'></i></a> <!-- Twitter link -->
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Shoparl. All rights reserved.</p> <!-- Footer text -->
+  </footer>
+
+<script src="./func.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

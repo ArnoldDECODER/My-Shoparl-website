@@ -1,0 +1,473 @@
+/* Header styles */
+header {
+    background-color: #908c2a; /* Sets the background color of the header */
+    height: 17vh; /* Sets the height of the header to 17% of the viewport height */
+    width: 100%; /* Makes the header span the entire width of the viewport */
+    margin-top: -20px; /* Adjusts the top margin by -20px to reposition the header */
+    z-index: 1; /* Ensures the header stays on top of other elements */
+    position: sticky; /* Makes the header stick to the top when scrolling */
+    top: 0px; /* Positions the header at the top of the viewport */
+    box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.098); /* Adds a subtle shadow to the header */
+}
+
+/* Prevent horizontal scrolling and improve layout consistency */
+body {
+    background-color: #908c2a; /* Sets the body background color */
+    color: #f7f7f2; /* Sets the text color */
+    font-family: Arial, sans-serif; /* Specifies the font family */
+    text-align: center; /* Centers the text horizontally */
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Removes the default padding */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    box-sizing: border-box; /* Ensures that padding and border are included in element's total width and height */
+}
+
+/* html styles */
+html {
+    width: 100%; /* Makes the html element take up the full width */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* homepage content styles */
+.homepage-content {
+    background-color: white; /* Sets the background color of the homepage content */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 36px; /* Sets the font size for the heading */
+    color: #908c2a; /* Sets the color of the heading */
+    margin-bottom: 10px; /* Adds 10px space below the heading */
+}
+
+p {
+    font-size: 20px; /* Sets the font size for paragraphs */
+    padding: 15px; /* Adds 15px padding inside paragraphs */
+    line-height: 1.6; /* Sets line height for better readability */
+}
+
+/* Black Friday label styles */
+.black-friday {
+    font-size: 32px; /* Sets the font size for the black Friday label */
+    color: #ff0000; /* Sets the text color to red */
+    background-color: black; /* Sets the background color to black */
+    padding: 20px; /* Adds padding around the label */
+    margin: 20px 0; /* Adds 20px margin on top and bottom */
+}
+
+.black-friday-bar {
+    background-color: black; /* Sets background color to black */
+    color: white; /* Sets text color to white */
+    padding: 10px; /* Adds padding around the bar */
+    text-align: center; /* Centers the text */
+    font-weight: bold; /* Makes the text bold */
+    margin-top: 28px; /* Adds 28px margin on top */
+}
+
+.black-friday-bar a {
+    color: red; /* Sets the link color to red */
+    text-decoration: underline; /* Underlines the link */
+}
+
+/* container1 styles */
+.container1 {
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+}
+
+/* Product description styles */
+.product-description {
+    font-style: italic; /* Makes the text italic */
+    padding: 10px; /* Adds 10px padding inside the description */
+    color: #908c2a; /* Sets the text color */
+}
+
+.description {
+    color: #ffd700; /* Sets the color of the description text to gold */
+}
+
+.product-description strong {
+    color: #ffd700; /* Sets strong text to gold */
+}
+
+/* Logo styles */
+.logo {
+    font-size: 2rem; /* Sets the font size to 2 rem */
+    color: #f7f7f2; /* Sets the logo color to a light color */
+}
+
+.logo:hover {
+    cursor: default; /* Sets the cursor to default when hovering over the logo */
+}
+
+/* Navigation bar styles */
+.nav-links a {
+    color: #f7f7f2; /* Sets the navigation links color */
+}
+
+nav, .nav-links {
+    display: flex; /* Uses flexbox layout for nav and nav-links */
+}
+
+#desktop-nav {
+    justify-content: space-around; /* Distributes items evenly */
+    align-items: center; /* Aligns items in the center */
+    height: 17vh; /* Sets the navigation bar height */
+}
+
+.nav-links {
+    gap: 2rem; /* Adds space between nav links */
+    list-style: none; /* Removes list style */
+    font-style: 1.5rem; /* Sets font size for links */
+}
+
+a {
+    color: white; /* Sets link text color to white */
+    text-decoration: none; /* Removes underline from links */
+    text-decoration-color: white; /* Sets link decoration color to white */
+}
+
+a:hover:not(.link a) {
+    color: #787760; /* Changes the color on hover */
+    text-decoration: underline; /* Underlines the link on hover */
+    text-underline-offset: 1rem; /* Offsets the underline by 1rem */
+    text-decoration-color: rgb(181, 181, 181); /* Changes underline color */
+}
+
+/* Hamburger menu styles */
+#hamburger-nav {
+    display: none; /* Hides the hamburger menu by default */
+}
+
+.hamburger-menu {
+    position: relative; /* Positions the hamburger menu relative to its parent */
+    display: inline-block; /* Displays it inline with other elements */
+}
+
+.hamburger-icon {
+    display: flex; /* Uses flexbox layout for the hamburger icon */
+    flex-direction: column; /* Stacks the lines vertically */
+    justify-content: space-between; /* Adds space between the lines */
+    height: 24px; /* Sets the height */
+    width: 30px; /* Sets the width */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.hamburger-icon span {
+    width: 100%; /* Makes each span fill the full width */
+    height: 2px; /* Sets the height of each line */
+    background-color: white; /* Sets the line color to white */
+    transition: all 0.3s ease-in-out; /* Adds a transition effect for the hamburger lines */
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px); /* Rotates and moves the first line to form an "X" shape */
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0; /* Hides the middle line */
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px); /* Rotates and moves the last line to form an "X" shape */
+}
+
+.hamburger-icon span:first-child {
+    transform: none; /* Resets the transformation on the first line */
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1; /* Ensures the first line is visible */
+}
+
+.hamburger-icon span:first-child {
+    transform: none; /* Resets transformation */
+}
+
+/* Menu links styles */
+.menu-links {
+    position: absolute; /* Positions the menu links absolutely */
+    top: 50px; /* Moves the menu 50px from the top */
+    right: 0; /* Aligns the menu to the right */
+    background-color: #908c2a; /* Sets background color of the menu */
+    list-style: none; /* Removes list-style */
+    padding: 20px; /* Adds padding around the menu */
+    display: none; /* Hides the menu by default */
+    flex-direction: column; /* Stacks the menu items vertically */
+    gap: 10px; /* Adds space between menu items */
+    opacity: 0.9; /* Sets the opacity to 0.9 */
+}
+
+.menu-links li {
+    margin: 10px 0; /* Adds space between menu items */
+}
+
+.menu-links li a {
+    color: white; /* Sets link color to white */
+    text-decoration: none; /* Removes underline */
+}
+
+.menu-links.open {
+    display: flex; /* Displays the menu when open */
+    animation: slideIn 0.3s forwards; /* Animates the menu sliding in */
+}
+
+.menu-links.open.slide-out {
+    animation: slideOut 0.3s forwards; /* Animates the menu sliding out */
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-10%,10%) translateY(-30px) rotate(0deg); /* Initial animation state */
+    }
+    50%{
+        transform: translate(-10%,10%) translateY(0px) rotate(0deg); /* Midway animation state */
+        box-shadow: 2px 2px 15px #e69500; /* Adds shadow */
+    }
+    100%{
+        transform: translate(-10%,10%) translateY(-30px) rotate(0deg); /* Final animation state */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%); /* Starts the animation from the right */
+    }
+    to {
+        transform: translateX(0); /* Moves the menu to its original position */
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0); /* Starts the slide-out animation from the original position */
+    }
+    to {
+        transform: translateX(100%); /* Moves the menu off-screen to the right */
+    }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none; /* Hides the desktop navigation on smaller screens */
+    }
+
+    #hamburger-nav {
+        display: grid; /* Displays the hamburger navigation as a grid */
+        grid-template-columns: repeat(10, 1fr); /* Creates a 10-column grid */
+        grid-template-rows: 1fr 1fr 1f; /* Defines 3 rows in the grid */
+    }
+
+    .logo {
+        grid-column: 2/5; /* Positions the logo in the second to fifth columns */
+        grid-row: 2/3; /* Places the logo in the second row */
+    }
+
+    .hamburger-menu {
+        grid-column: 10/11; /* Positions the hamburger menu in the last column */
+        grid-row: 2/3; /* Places it in the second row */
+        width: 40px; /* Sets the width of the hamburger icon */
+    }
+
+    .hamburger-icon span {
+        background-color: white; /* Sets the span color to white */
+        transition: all 0.3 ease-in-out; /* Adds a transition effect */
+    }
+
+    nav {
+        height: 14vh; /* Reduces the height of the navigation */
+    }
+
+    header {
+        height: 20vh; /* Increases the header height */
+    }
+}
+
+@media screen and (max-width: 854px) {
+    .introduction {
+        flex-direction: column; /* Stacks the introduction content vertically */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 1.5rem; /* Reduces the font size of the logo */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stacks the navigation links vertically */
+        gap: 0.5rem; /* Adds a smaller gap between links */
+        text-align: center; /* Centers the text */
+    }
+}
+
+.link a {
+    text-decoration: underline; /* Underlines the link */
+}
+
+.introduction {
+    margin-top: 20px; /* Adds 20px margin on top of the introduction */
+}
+
+/* Black Friday picture styles */
+.black-friday-picture {
+    border-radius: 50%; /* Makes the image circular */
+    width: 300px; /* Sets width to 300px */
+    height: 300px; /* Sets height to 300px */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    transform: translateY(0); /* Keeps the image in the original vertical position */
+    animation: animate 3s linear infinite; /* Applies animation to the image */
+    max-width: 100%; /* Ensures the image doesn't exceed container width */
+    display: block; /* Displays the image as a block */
+}
+
+.black-friday-picture img {
+    width: 100%; /* Makes the image fill its container width */
+    height: 100%; /* Makes the image fill its container height */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/* Product grid styles */
+.product-grid {
+    display: grid; /* Uses grid layout for the product grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Defines columns with auto-fit and a minimum width of 200px */
+    gap: 20px; /* Adds space between grid items */
+    padding: 20px; /* Adds padding inside the grid */
+    max-width: 100%; /* Ensures the grid doesn't exceed the container width */
+    margin: 0 auto; /* Centers the grid horizontally */
+}
+
+.product-card {
+    text-align: center; /* Centers the text inside each product card */
+    border: 1px solid #ddd; /* Adds a light border around the product card */
+    border-radius: 8px; /* Rounds the corners of the product card */
+    padding: 20px; /* Adds padding inside the card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Adds a smooth transition effect for hover */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Scales the card slightly on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+}
+
+.product-card img {
+    max-width: 100%; /* Ensures the image fills the card without overflowing */
+    border-radius: 8px; /* Rounds the corners of the image */
+}
+
+.product-card h3 {
+    margin: 10px 0; /* Adds space above and below the heading */
+    color: #908c2a; /* Sets the color of the heading */
+}
+
+.product-card p {
+    color: #908c2a; /* Sets the paragraph text color */
+    font-size: 1.2em; /* Sets the font size of the paragraph */
+}
+
+.product-card button {
+    background-color: #908c2a; /* Sets the button background color */
+    color: white; /* Sets the button text color */
+    border: none; /* Removes the border from the button */
+    padding: 10px 15px; /* Adds padding inside the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s; /* Adds a transition effect for the background color */
+}
+
+.product-card button:hover {
+    background-color: #76712a; /* Changes the background color on hover */
+}
+
+/* Social media icons */
+.socials a {
+    display: inline-flex; /* Displays social media icons inline */
+    flex-wrap: wrap; /* Allows wrapping of icons */
+    justify-content: center; /* Centers the icons horizontally */
+    align-items: center; /* Centers the icons vertically */
+    width: 40px; /* Sets the width of each icon */
+    height: 40px; /* Sets the height of each icon */
+    background-color: #fff; /* Sets background color to white */
+    border-radius: 50%; /* Makes the icons circular */
+    margin: 0 10px; /* Adds space between the icons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a shadow effect to the icons */
+    transition: transform 0.3s; /* Adds a smooth transition effect for hover */
+}
+
+.socials a:hover {
+    transform: scale(1.1); /* Scales the icon slightly on hover */
+}
+
+.socials i {
+    font-size: 1.5rem; /* Sets the size of the social media icons */
+    color: #908c2a; /* Sets the icon color */
+}
+
+.socials a:hover i {
+    color: #ff0000; /* Changes the icon color to red on hover */
+}
+
+.socials a:hover {
+    background-color: white; /* Changes the background color to white when hovering over the link */
+    color: black; /* Changes the text color to black when hovering over the link */
+    box-shadow: 0 0 10px white; /* Adds a glowing white shadow around the link when hovered */
+}
+
+#Contact {
+    margin-bottom: 0px; /* Removes any bottom margin from the Contact section */
+    align-content: center; /* Vertically centers the content within the Contact section */
+}
+
+/* Helper class to clear any accidental margin-based overflow */
+.container {
+    max-width: 100%; /* Ensures the container doesn't exceed 100% width of its parent */
+    overflow: hidden; /* Hides any content that overflows the container */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Control the carousel width */
+    margin: 20px auto;
+    position: relative;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Carousel Items */
+  .carousel-item {
+    width: 100%; /* Ensures each carousel item takes up the full width of the container */
+    display: block; /* Makes each carousel item a block-level element */
+    transition: opacity 0.5s ease-in-out; /* Applies a smooth fade effect when changing opacity */
+}
+
+.hidden {
+    display: none; /* Hides the element with the 'hidden' class */
+}
+
+/* Next Slide Button */
+.nextSlide {
+    position: absolute; /* Positions the next slide button absolutely within its parent */
+    right: 10px; /* Aligns the button to the right with a 10px margin */
+    top: 50%; /* Vertically centers the button within the parent */
+    transform: translateY(-50%); /* Fine-tunes vertical centering by adjusting the button's position */
+    background-color: #908541; /* Sets the button's background color */
+    color: white; /* Sets the text color of the button to white */
+    border: none; /* Removes any border from the button */
+    padding: 8px 14px; /* Adds padding inside the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the button */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for background color and box-shadow changes */
+}
+
+.nextSlide:hover {
+    background-color: #c9a71c; /* Changes the background color when the button is hovered */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Increases the box-shadow on hover for a more prominent effect */
+}

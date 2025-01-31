@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Defines the document type and sets the language to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on different devices -->
+    <title>Shoparl</title> <!-- Sets the title of the page displayed on the browser tab -->
+    <link rel="stylesheet" href="index.css"> <!-- Links to the external CSS file for styling -->
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Links to the Boxicons library for icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Links to Google Material Icons library -->
+</head>
+<body>
+    <header> <!-- Header section containing the navigation menu -->
+        <nav id="desktop-nav"> <!-- Navigation menu for desktop view -->
+            <p class="logo">Shoparl</p> <!-- Logo for the website -->
+            <div>
+                <ul class="nav-links"> <!-- List of navigation links -->
+                    <li><a href="index.html">Home</a></li> <!-- Link to the homepage -->
+                    <li><a href="shop.html">Shop</a></li> <!-- Link to the shop page -->
+                    <li><a href="specials.html">Specials</a></li> <!-- Link to the specials page -->
+                    <li><a href="contact-us-form.html">Contact Us</a></li> <!-- Link to the contact us page -->
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hold"> <!-- Container for mobile navigation -->
+            <nav id="hamburger-nav"> <!-- Navigation menu for mobile view -->
+                <p class="logo">Shoparl</p> <!-- Logo for mobile view -->
+                <div class="hamburger-menu"> <!-- Container for hamburger menu -->
+                    <div class="hamburger-icon" onclick="toggleMenu()"> <!-- Hamburger icon that toggles the menu -->
+                        <span></span>                                                                                                                                       
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links"> <!-- List of menu links for mobile view -->
+                        <li><a href="index.html" onclick="toggleMenu()">Home</a></li> <!-- Link to the homepage with menu toggle -->
+                        <li><a href="shop.html" onclick="toggleMenu()">Shop</a></li> <!-- Link to the shop page with menu toggle -->
+                        <li><a href="specials.html" onclick="toggleMenu()">Specials</a></li> <!-- Link to the specials page with menu toggle -->
+                        <li><a href="contact-us-form.html" onclick="toggleMenu()">Contact Us</a></li> <!-- Link to the contact us page with menu toggle -->
+                    </div>
+                </div>
+                </nav>
+        </div>
+    </header>
+    <section class="homepage-content"><br> <!-- Section for homepage content -->
+          <h1 class="introduction">Welcome To <strong class="description">Shoparl</strong></h1> <!-- Heading introducing the site -->
+        <p class="product-description">Shoparl offers a curated shopping experience with a focus on <strong class="description">high-quality</strong>, <strong class="description">affordable fashion</strong>, accessories, and lifestyle products. Highlighting exclusive deals, trendy collections, and seamless online shopping, Shoparl caters to style-conscious customers looking for convenience and value.</p> <!-- Product description paragraph -->
+        <p id="countdownTimer" class="description">Sale ends in: </p> <!-- Sale countdown timer description -->
+        <section >
+            <img src="images/blackfridaypicture2.jpg" alt="black friday picture" class="black-friday-picture" > <!-- Image for Black Friday promotion -->
+        </section>
+
+        <!-- <div class="container1">
+            <div class="black-friday-picture">
+              <img src="images/blackfridaypicture2.jpg" alt="Black Friday Image" />
+            </div>
+          </div>         -->
+          <div class="black-friday-bar"> <!-- Banner for Black Friday specials -->
+    
+            Black Friday Specials! <a href="specials.html">Check out our great deals</a> <!-- Link to the specials page -->
+          </div>
+        <p class="product-description">Here you'll find unique and high-quality stationery goods that are designed by Artist & Creator, AmandaRachLee. If you want to add a daily dose of <strong>creativity</strong>, <strong>mindfulness</strong>, and <strong>productivity</strong> to your life, you've come to the right place!</p> <!-- Product description for stationery items -->
+
+        <div class="product-grid"> <!-- Grid layout for product cards -->
+            <div class="product-card reveal visible"> <!-- First product card -->
+              <img src="images/DenimBag1.webp" alt="Product 1"> <!-- Product image -->
+              <h3>Denim Bag</h3> <!-- Product title -->
+              <p>$20.00</p> <!-- Product price -->
+              <button onclick="window.location.href='shop.html'">Buy Now</button> <!-- Button to navigate to the shop page -->
+            </div>
+            <div class="product-card"> <!-- Second product card -->
+              <img src="images/2025DoodlePlanner-3.webp" alt="Product 2"> <!-- Product image -->
+              <h3>2025 Doodle Planner</h3> <!-- Product title -->
+              <p>$25.00</p> <!-- Product price -->
+              <button onclick="window.location.href='shop.html'">Buy Now</button> <!-- Button to navigate to the shop page -->
+            </div>
+            <div class="product-card"> <!-- Third product card -->
+              <img src="images/Stickers-1_b260eb75-2111-4ad0-9539-6533381f35fc.webp" alt="Product 3"> <!-- Product image -->
+              <h3>Stickers</h3> <!-- Product title -->
+              <p>$30.00</p> <!-- Product price -->
+              <button onclick="window.location.href='shop.html'">Buy Now</button> <!-- Button to navigate to the shop page -->
+            </div>
+          </div>
+                              </section>
+    
+        </article>
+    
+        <!-- <div class="carousel">
+            <img class="carousel-item" src="images/DenimBag1.webp" alt="Slide 1">
+            <img class="carousel-item hidden" src="images/DenimBag1.webp"alt="Slide 2">
+            <img class="carousel-item hidden" src="image3.jpg" alt="Slide 3">
+          </div>
+          <button id="nextSlide">Next</button> -->
+
+          <div class="carousel"> <!-- Carousel container for rotating product images -->
+            <div class="carousel-item"> <!-- First carousel item -->
+              <img src="images/Tan_Dotted_Notebook_copy.webp" alt="Image 1"> <!-- First image -->
+            </div>
+            <div class="carousel-item hidden"> <!-- Second carousel item (hidden by default) -->
+              <img src="images/SwirlWashiTape-9.webp" alt="Image 2"> <!-- Second image -->
+            </div>
+            <div class="carousel-item hidden"> <!-- Third carousel item (hidden by default) -->
+                <img src="images/pencile case.webp" alt="Image 3"> <!-- Third image -->
+              </div>
+              <button class="nextSlide">Next</button> <!-- Button to navigate to the next carousel item -->
+          </div>
+                    
+    </section>
+
+
+    
+    <section id="contact_us" class="socials"> <!-- Section for social media links -->
+        <h2 id="Contact">Contact Us</h2> <!-- Heading for contact section -->
+        <div class="socials" id="contact_us"> <!-- Container for social media links -->
+            <a href="https://www.instagram.com/shoparl.co/" target= "_blank" rel="noopener noreferrer"><i class='bx bxl-instagram' ></i></a> <!-- Instagram link -->
+            <a href="https://www.youtube.com/amandarachlee" target= "_blank" rel="noopener noreferrer"><i class='bx bxl-youtube'  ></i></a> <!-- YouTube link -->
+            <a href="https://x.com/shop_ARL" target= "_blank" rel="noopener noreferrer"><i class='bx bxl-twitter' ></i></a> <!-- Twitter link -->
+        </div>
+</section>
+    <footer> <!-- Footer section -->
+        <p>&copy; 2024 Shoparl. All rights reserved.</p> <!-- Footer text -->
+    </footer>
+
+    <script src="./func.js"></script> <!-- Link to an external JavaScript file for functionality -->
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* The CSS code below is for the contact us page only */
+.container {
+    background-color: rgb(55, 55, 55); /* Dark background for the container */
+    margin: 100px 300px; /* Margin around the container */
+    padding: 30px 40px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners for the container */
+}
+
+.header h2 {
+    text-align: center; /* Center-align the header text */
+    color: white; /* White color for the header text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family for the header text */
+}
+
+.header p {
+    color: #e69500; /* Gold color for the description text */
+    margin: 30px 0px; /* Add margin to the top and bottom */
+}
+
+.gender {
+    width: 116px; /* Width for the gender dropdown */
+}
+
+.communication {
+    width: 39%; /* Set the width for the communication preference section */
+    color: white; /* White text color */
+    margin-left: 0px; /* Remove left margin */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+}
+
+.communication label {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically */
+    font-size: 16px; /* Adjust text size for communication labels */
+}
+
+.form-row {
+    justify-content: space-between; /* Space out the items in the form row */
+    margin-bottom: 5px; /* Add space at the bottom of the form row */
+}
+
+.form-row input,
+.form-row select {
+    width: 45%; /* Set the width of the input fields and dropdowns */
+    padding: 10px; /* Add padding inside the input fields */
+    border: 1px solid #cccccc; /* Light border around the input fields */
+    border-radius: 2px; /* Slightly rounded corners for the input fields */
+    font-size: 12px; /* Font size for the input fields */
+}
+
+textarea {
+    width: 90%; /* Set the width for the textarea */
+    padding: 10px; /* Add padding inside the textarea */
+    border: 1px solid #ccc; /* Border around the textarea */
+    border-radius: 4px; /* Rounded corners for the textarea */
+    font-size: 14px; /* Font size for the textarea text */
+    min-height: 100px; /* Minimum height for the textarea */
+    margin-bottom: 15px; /* Margin at the bottom */
+}
+
+button {
+    background-color: darkgray; /* Set background color for the submit button */
+    color: white; /* White text color for the button */
+    padding: 12px; /* Padding inside the button */
+    border: none; /* Remove border around the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 100%; /* Make the button full-width */
+    font-size: 16px; /* Font size for the button text */
+    margin: 30px 0px; /* Add margin above and below the button */
+}
+
+button:hover {
+    background-color: #e69500; /* Change button background color on hover */
+}
+
+h3 {
+    text-align: center; /* Center-align the text */
+    color: #e69500; /* Gold color for the heading */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family for the heading */
+}
+
+@media screen and (max-width: 854px) {
+    /* Adjust the container margins on smaller screens */
+    .container {
+        margin: 80px 80px; /* Decrease margin on smaller screens */
+    }
+}

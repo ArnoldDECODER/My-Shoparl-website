@@ -1,0 +1,55 @@
+/* The CSS code below is for the shop page only */
+#shop-now {
+    text-align: center; /* Centers the text inside the #shop-now container */
+    padding: 20px; /* Adds 20px of padding inside the #shop-now container */
+    background-color: #f9f9f9; /* Sets a light gray background color for the #shop-now section */
+    color: #333; /* Sets the text color to a dark gray */
+}
+
+.product-grid {
+    display: flex; /* Uses flexbox layout to arrange the product items */
+    gap: 20px; /* Adds 20px space between the product items */
+    justify-content: center; /* Centers the product items horizontally */
+    flex-wrap: wrap; /* Allows the items to wrap to the next line if necessary */
+}
+
+.product {
+    border: 1px solid #ccc; /* Adds a light gray border around each product */
+    padding: 10px; /* Adds 10px of padding inside the product container */
+    background: white; /* Sets a white background color for the product container */
+    width: 200px; /* Sets a fixed width for the product containers */
+    text-align: center; /* Centers the text inside each product container */
+    border-radius: 5px; /* Rounds the corners of the product container */
+}
+
+.product img {
+    width: 100%; /* Makes the product image fill the entire width of the container */
+    height: auto; /* Maintains the aspect ratio of the product image */
+    margin-bottom: 10px; /* Adds 10px of space below the image */
+}
+
+.product button {
+    background: #908c2a; /* Sets a dark yellow-green background color for the button */
+    color: white; /* Sets the text color of the button to white */
+    padding: 5px 10px; /* Adds padding inside the button (5px top/bottom, 10px left/right) */
+    border: none; /* Removes the border of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    margin: 5px; /* Adds 5px space around the button */
+}
+
+.product button:hover {
+    background: #706c1e; /* Changes the button background color to a darker shade on hover */
+}
+
+#scrollToTop {
+    position: fixed; /* Fixes the position of the button at the bottom-right corner of the page */
+    bottom: 20px; /* Positions the button 20px above the bottom edge of the page */
+    right: 20px; /* Positions the button 20px from the right edge of the page */
+    display: none; /* Hides the button by default */
+    background-color: #908c2a; /* Sets the background color of the button */
+    color: white; /* Sets the text color of the button to white */
+    border: none; /* Removes the border of the button */
+    padding: 10px 15px; /* Adds padding inside the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+}

@@ -13,17 +13,21 @@ Shoparl is an online store offering a curated selection of high-quality, afforda
 - **Contact Us**: Details for reaching out to the store.
 - **Specials**: Displays current promotions and deals.
 
-##Project Updates and Enhancements
-In this project phase, several key updates and improvements were made to enhance the user experience, responsiveness, and interactivity of the website. Below is a summary of the changes implemented:
-*1.* Countdown Timer for Black Friday Sale
-A countdown timer was integrated to display the time remaining until the end of the Black Friday sale. This feature provides urgency for users, encouraging them to make purchases before the timer runs out.
-*2.* Animated Black Friday Picture
-The Black Friday image on the homepage now has an engaging bounce animation. This visual effect draws the user's attention, making the design more dynamic and appealing.
-*3.* Image Carousel Integration
-An interactive image carousel was added to showcase different products. Users can navigate through the product images by pressing the "Next" button, providing a better way to view multiple offers or items in one section.
-*4.* Responsive Design Fixes
-The errors affecting the website's display across different screen sizes were resolved. The site now adapts smoothly to various devices, including mobile phones, tablets, and desktops, ensuring a consistent user experience.
+## Project Updates and Enhancements
 
+In this project phase, several key updates and improvements were made to enhance the user experience, responsiveness, and interactivity of the website. Below is a summary of the changes implemented:
+
+## 1. Countdown Timer for Black Friday Sale
+A countdown timer was integrated to display the time remaining until the end of the Black Friday sale. This feature provides urgency for users, encouraging them to make purchases before the timer runs out.
+
+## 2. Animated Black Friday Picture
+The Black Friday image on the homepage now has an engaging bounce animation. This visual effect draws the user's attention, making the design more dynamic and appealing.
+
+## 3. Image Carousel Integration
+An interactive image carousel was added to showcase different products. Users can navigate through the product images by pressing the "Next" button, providing a better way to view multiple offers or items in one section.
+
+## 4. Responsive Design Fixes
+The errors affecting the website's display across different screen sizes were resolved. The site now adapts smoothly to various devices, including mobile phones, tablets, and desktops, ensuring a consistent user experience.
 
 ## Live Website
 
